@@ -1,5 +1,5 @@
 .idea
 venv
-/documentGPT/.ipynb_checkpoints
-/documentGPT/.cache
-/documentGPT/.env
+/GPT practices/.ipynb_checkpoints
+/GPT practices/.cache
+/GPT practices/.env

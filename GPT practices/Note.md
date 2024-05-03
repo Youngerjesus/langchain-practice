@@ -76,4 +76,21 @@ chain.invoke("카프카에서 브로커를 신뢰성있게 쓰려면 어떻게 �
 
 ```
 
+LangChain 에서 Chain 을 이용하는 이유:
+- LLM 에게 질문하고 답변을 가져오는 과정은 템플릿 구조를 따른다: 
+  - 1. Vector Store 에서 Document 가져오고
+  - 2. 가져온 Document 를 가지고 Context 만들어주고
+  - 3. 만든 Context 와 질문 그리고 프롬포트 템플릿을 가지고 LLM 에게 던져줄 프롬포트를 작성해주고
+  - 4. LLM 에게 프롬포트를 던져서 답변을 가져오는 것. 
+
+```python
+docs = retriever.invoke(message)
+docs = "\n\n".join(document.page_content for document in docs)
+
+prompt = template.format_messages(context=docs, question=message)
+
+llm.predit_messages(prompt)
+```
+
+LangChain 의 Callback Handler 를 이용하면 LLM 이 에러를 던졌을 때, 시작했을 때 등의 이벤트를 받아낼 수 있다.  
 
