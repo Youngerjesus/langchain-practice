@@ -21,7 +21,7 @@ from langchain_core.outputs import LLMResult, GenerationChunk, ChatGenerationChu
 @st.cache_resource(show_spinner="Embedding file...")
 def embed_file(file):
     file_content = file.read()
-    file_path = f"./GPT practices/.cache/files/{file.name}"
+    file_path = f"./.cache/files/{file.name}"
     with open(file_path, "wb") as f:
         f.write(file_content)
 
@@ -33,7 +33,7 @@ def embed_file(file):
 
     embedder = OpenAIEmbeddings()
 
-    cache_dir = LocalFileStore(f"./GPT practices/.cache/embeddings/{file.name}")
+    cache_dir = LocalFileStore(f"./.cache/embeddings/{file.name}")
 
     cached_embedding = CacheBackedEmbeddings.from_bytes_store(embedder, cache_dir)
 
@@ -141,10 +141,6 @@ if file:
 
         with st.chat_message("ai"):
             response = chain.invoke(message)
-
-
-
-
 
 else:
     st.session_state["messages"] = []
