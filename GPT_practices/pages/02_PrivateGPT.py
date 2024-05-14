@@ -5,10 +5,10 @@ import streamlit as st
 from dotenv import load_dotenv
 import openai
 from langchain.document_loaders import PyPDFLoader
-from langchain.chat_models import ChatOpenAI
+from langchain.chat_models import ChatOllama
 from langchain.document_loaders import UnstructuredFileLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings, CacheBackedEmbeddings
+from langchain.embeddings import OllamaEmbeddings, CacheBackedEmbeddings, OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.schema.runnable import RunnableLambda
 from langchain.prompts import ChatPromptTemplate
@@ -37,7 +37,10 @@ def embed_file(file):
 
     cached_embedding = CacheBackedEmbeddings.from_bytes_store(embedder, cache_dir)
 
-    vectorstore = Chroma.from_documents(docs, cached_embedding)
+    vectorstore = Chroma.from_documents(
+        documents=docs,
+        embedding=cached_embedding
+    )
 
     retriever = vectorstore.as_retriever()
 
@@ -96,7 +99,8 @@ class ChatCallbackHandler(BaseCallbackHandler):
 
 load_dotenv()
 
-llm = ChatOpenAI(
+llm = ChatOllama(
+    model="mistral:latest",
     temperature=0.1,
     streaming=True,
     callbacks=[
