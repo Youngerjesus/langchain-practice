@@ -31,9 +31,9 @@ def embed_file(file):
 
     docs = spliter.split_documents(loader.load())
 
-    embedder = OpenAIEmbeddings()
-
     cache_dir = LocalFileStore(f"./.cache/embeddings/{file.name}")
+
+    embedder = OpenAIEmbeddings()
 
     cached_embedding = CacheBackedEmbeddings.from_bytes_store(embedder, cache_dir)
 
