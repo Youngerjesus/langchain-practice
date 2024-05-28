@@ -4,3 +4,4 @@
 - [PriavteGPT](/GPT_practices)
 - [QuizGPT](/GPT_practices)
 - [SiteGPT](/GPT_practices)
+- [MeetingGPT](/GPT_practices)
