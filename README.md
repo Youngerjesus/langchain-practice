@@ -5,3 +5,4 @@
 - [QuizGPT](/GPT_practices)
 - [SiteGPT](/GPT_practices)
 - [MeetingGPT](/GPT_practices)
+- [InvestingGPT](/GPT_practices) 
