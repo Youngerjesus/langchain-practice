@@ -23,3 +23,6 @@
 - [큰 문서를 나눠서 검색하기  (Parent-Child Chunking)](Hello%20LangChain/Docs/큰%20문서를%20나눠서%20검색하기%20%20(Parent-Child%20Chunking).md)
 - [Chain을 이용한, LLM 워크 플로우 구현 #1](Hello%20LangChain/Docs/Chain을%20이용한,%20LLM%20워크%20플로우%20구현%20%231.md)
 - [Chain을 이용한 복잡한 워크 플로우의 구현](Hello%20LangChain/Docs/Chain을%20이용한%20복잡한%20워크%20플로우의%20구현.md)
+- [LCEL (LangChain Expression Language)](Hello%20LangChain/Docs/LCEL%20(LangChain%20Expression%20Language).md)
+- [자연어로 SQL 생성하기](Hello%20LangChain/Docs/자연어로%20SQL%20생성하기.md)
+- 
