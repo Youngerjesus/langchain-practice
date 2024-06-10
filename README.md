@@ -1,5 +1,8 @@
 # langchain-practice
 
+LangChain Project: A Comprehensive Guide and Practical Exercises for Utilizing Various GPT Applications and Implementing LLM Workflows
+
+
 ## GPT Practices 
 - [DocumentGPT](/GPT%20practices)
 - [PriavteGPT](/GPT_practices)
@@ -25,4 +28,7 @@
 - [Chain을 이용한 복잡한 워크 플로우의 구현](Hello%20LangChain/Docs/Chain을%20이용한%20복잡한%20워크%20플로우의%20구현.md)
 - [LCEL (LangChain Expression Language)](Hello%20LangChain/Docs/LCEL%20(LangChain%20Expression%20Language).md)
 - [자연어로 SQL 생성하기](Hello%20LangChain/Docs/자연어로%20SQL%20생성하기.md)
-- 
+- [Agent Tool 을 이용하여 ChatGPT와 구글 검색엔진 연동하기](Hello%20LangChain/Docs/Agent%20Tool%20을%20이용하여%20ChatGPT와%20구글%20검색엔진%20연동하기.md)
+- [LangSmith를 이용한 Langchain agent 내부 동작 구조 이해](Hello%20LangChain/Docs/LangSmith를%20이용한%20Langchain%20agent%20내부%20동작%20구조%20이해.md)
+- [ChatGPT에서 질문과 관련된 웹페이지 크롤링하기](Hello%20LangChain/Docs/ChatGPT에서%20질문과%20관련된%20웹페이지%20크롤링하기.md)
+- [ChatGPT에서 대화 히스토리 유지하기](Hello%20LangChain/Docs/ChatGPT에서%20대화%20히스토리%20유지하기.md)
